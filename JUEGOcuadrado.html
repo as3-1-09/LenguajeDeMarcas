@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+    <style>
+    
+        body {
+            background-color: white;
+        }
+
+        .cuadrado  {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+           box-shadow: 10px 10px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            /*visibility: hidden;*/
+        }
+        
+
+    </style>
+<body>
+
+<div id="cuadrado01" class="cuadrado"></div>
+
+<script>
+
+    function ocultar_o_visibilizar() {
+        if (cuadrado01.style.backgroundColor == "white") {
+            cuadrado01.style.backgroundColor = "green";
+        } else {
+            cuadrado01.style.backgroundColor = "white";
+        }
+    }
+    cuadrado01 = document.getElementById("cuadrado01");
+    cuadrado01.addEventListener("click", ocultar_o_visibilizar);
+    
+
+</script>
+</body>
+</html>
