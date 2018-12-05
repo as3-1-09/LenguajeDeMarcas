@@ -20,21 +20,12 @@
             box-shadow: 5px 5px;
         }
 
-        .box1  {
-            background-color: #55fa45;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            left: 210px;
-            top: 100px;
-            box-shadow: 5px 5px;
-        }
+
 
     </style>
 <body>
 
 <div id="box" class="box"></div>
-<div id="box" class="box1"></div>
 
 <script>
 
@@ -60,29 +51,6 @@
         }
 
     b1 = document.getElementById("box",);
-
-    function keyboard (key) {
-
-               
-        if (key.keyCode == 39) {
-            console.log("right");
-            x = x + dx; 
-        } else if (key.keyCode == 37) {
-            console.log("left")
-            x = x - dx; 
-        } else if (key.keyCode == 38) {
-            console.log("top")
-            y = y - dy; 
-        } else if (key.keyCode == 40) {
-            console.log("down")
-            y = y + dy; 
-        }
-        b1.style.left = x + "px";
-        b1.style.top = y + "px";
-
-    }
-
-b1 = document.getElementById("box",);
     document.addEventListener("keydown", keyboard)
 
     x = 100;
@@ -90,7 +58,9 @@ b1 = document.getElementById("box",);
     y = 100;
     dy = 10;
     b1.style.left = x + "px";
-    b1.style.top = y + "px";   
+    b1.style.top = y + "px";
+
+
 
 </script>
 </body>
