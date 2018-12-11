@@ -7,24 +7,39 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: #555;
         }
+
+        .bordes {
+            width: 800px;
+            height: 500px;
+            background-color: #333;
+            position:absolute;
+            top:"0px";
+            left:"0px";
+            border-style: solid;
+        }
+
         .cuadrado {
             width: 20px;
             height: 20px;
-            background-color: white;
-            box-shadow: 10px 10px;
+            background-color: #55fa45;
+            /*box-shadow: 5px 5px;*/
             position:absolute;
             top:"0px";
             left:"0px";
         }
+
     </style>
 
 </head>
 <body>
+    <div class="bordes"></div>
     <div id="cuadrado1" class="cuadrado"></div>
 
     <script>
+       
+        
         function keyboard (key) {
             //console.log(key.keyCode)
                
@@ -44,6 +59,7 @@
             c1.style.left = x + "px";
             c1.style.top = y + "px";
             
+            
         }
         // main program
         //
@@ -57,8 +73,14 @@
         c1.style.left = x + "px";
         c1.style.top = y + "px";
         //
-    
         
+        if (x <= 50){
+            haycolision
+            notemueras
+        }else {
+            muevete
+        }
+
     </script>
 
 </body>
