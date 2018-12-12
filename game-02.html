@@ -11,18 +11,18 @@
         }
 
         .bordes {
-            width: 800px;
-            height: 500px;
+            width: 1000px;
+            height: 900px;
             background-color: #333;
             position:absolute;
-            top:"0px";
-            left:"0px";
+            top:"100px";
+            left:"100px";
             border-style: solid;
         }
 
         .cuadrado {
-            width: 20px;
-            height: 20px;
+            width: 100px;
+            height: 100px;
             background-color: #55fa45;
             /*box-shadow: 5px 5px;*/
             position:absolute;
@@ -34,15 +34,20 @@
 
 </head>
 <body>
-    <div class="bordes"></div>
+    <div id="bordes1" class="bordes"></div>
     <div id="cuadrado1" class="cuadrado"></div>
 
     <script>
-       
-        
+
         function keyboard (key) {
             //console.log(key.keyCode)
-               
+        
+            if ((x<=25)|| (x+100>=1000)||(y>=900)||(y+100>=900)) {
+            //colision x
+        } else {
+            //funcionamiento normal  
+
+
             if (key.keyCode == 39) {
                 console.log("right");
                 x = x + dx; 
@@ -58,28 +63,22 @@
             }
             c1.style.left = x + "px";
             c1.style.top = y + "px";
-            
-            
-        }
+            }
+                }    
         // main program
         //
         c1 = document.getElementById("cuadrado1");
         document.addEventListener("keydown", keyboard)
         //
-        x = 15;
+        x = 100;
         dx = 10;
-        y = 15;
+        y = 100;
         dy = 10;
         c1.style.left = x + "px";
         c1.style.top = y + "px";
         //
         
-        if (x <= 50){
-            haycolision
-            notemueras
-        }else {
-            muevete
-        }
+        bordes1 = document.getElementById("bordes1");
 
     </script>
 
