@@ -9,6 +9,7 @@
         body {
             background-color: #555;
         }
+
         .bordes {
             width: 1000px;
             height: 900px;
@@ -18,6 +19,7 @@
             left:"100px";
             border-style: solid;
         }
+
         .cuadrado {
             width: 100px;
             height: 100px;
@@ -27,39 +29,50 @@
             top:"0px";
             left:"0px";
         }
+
     </style>
 
 </head>
 <body>
-    
     <div id="bordes1" class="bordes"></div>
     <div id="cuadrado1" class="cuadrado"></div>
 
     <script>
+
         function keyboard (key) {
             //console.log(key.keyCode)
         
-            if ((x<=25)|| (x+100>=1000)||(y>=900)||(y+100>=900)) {
+            //if ((x<=25)|| (x+100>=1000)||(y>=900)||(y+100>=900)) {
             //colision x
-        } else {
+        //} else {
             //funcionamiento normal  
+
+
             if (key.keyCode == 39) {
                 console.log("right");
+                if (x < 900){
                 x = x + dx; 
+                } else (x = 900)
             } else if (key.keyCode == 37) {
                 console.log("left")
+                if (x > 20){
                 x = x - dx; 
+                } else (x = 20)
             } else if (key.keyCode == 38) {
                 console.log("top")
+                if (y > 20){
                 y = y - dy; 
+                } else (y = 20)
             } else if (key.keyCode == 40) {
                 console.log("down")
-                y = y + dy; 
+                if (y < 800){
+                y = y + dy;
+                } else (y = 800) 
             }
             c1.style.left = x + "px";
             c1.style.top = y + "px";
             }
-                }    
+            
         // main program
         //
         c1 = document.getElementById("cuadrado1");
@@ -74,6 +87,7 @@
         //
         
         bordes1 = document.getElementById("bordes1");
+
     </script>
 
 </body>
