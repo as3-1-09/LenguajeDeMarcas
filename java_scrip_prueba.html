@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+      .cuadrado{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        box-shadow: 10px 10px;
+        position: absolute;
+       }
+    </style>
+
+    <div id="cuadrado" onclick="ocultar()" onclick="visible()" class="cuadrado"></div>
+
+      <script type="text/javascript">
+
+
+        function ocultar() {
+          cuadrado.style.visibility = "hidden";
+        }
+
+        function visible() {
+          cuadrado.style.visibility = "visible";
+        }
+        cuadrado = document.getElementById('cuadrado');
+        cuadrado.addEventListener("click", ocultar);
+
+    </script>
+  </body>
+</html>
