@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+    <style>
+    
+        body {
+            background-color: #444;
+        }
+
+        .cuadrado  {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            box-shadow: 10px 10px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            /*visibility: hidden;*/
+        }
+        
+
+    </style>
+<body>
+
+<div id="cuadrado01" class="cuadrado"></div>
+
+<script>
+
+    cuadrado01 = document.getElementById("cuadrado01");
+
+    function ocultar() {
+        cuadrado01.style.visibility= "hidden";
+    }
+
+    function visibilizar() {
+        cuadrado01.style.visibility= "visible";
+    }
+
+    cuadrado01.addEventListener("click", ocultar);
+
+</script>
+</body>
+</html>
