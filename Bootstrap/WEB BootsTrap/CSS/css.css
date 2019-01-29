@@ -1,0 +1,22 @@
+body{
+    font-family:"Alegreya SC";
+    padding: 0px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+.col {
+background-color: #333;
+border: 2px solid black;
+}
+.col-10 {
+background-color: whitesmoke;
+border: 2px solid black;
+}
+.bg-color {
+background-color: #333;
+}
