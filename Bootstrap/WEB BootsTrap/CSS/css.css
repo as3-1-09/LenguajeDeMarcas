@@ -13,13 +13,29 @@ body{
 background-color: #333;
 border: 2px solid black;
 }
+
 .col-10 {
 background-color: whitesmoke;
 border: 2px solid black;
 }
+
 .bg-color {
-background-color: #333;
+background-color: #111;
 }
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #111;
+    background-clip: border-box;
+
+}
+
 
 
 
