@@ -22,14 +22,6 @@ background-color: #333;
 }
 
 
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-	color: red;
-	border-color: red;
-}
-
-.bg-color3 {
-    background-color:#960000;
-    }
 
 
     
