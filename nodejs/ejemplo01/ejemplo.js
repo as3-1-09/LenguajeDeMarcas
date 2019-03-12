@@ -1,5 +1,5 @@
 /*
-ejemplo 01: http server. read x and y and return sum
+ejemplo 01(if): http server. read x and y and return sum
 */
 
 
@@ -22,6 +22,8 @@ z = Math.floor(Math.random() * 51);
 // console.log(z)
 
 console.log("el valor de z es: " + z)
+
+// https://www.w3schools.com/js/js_if_else.asp
 if (z > 10) {
     //true
     console.log("es mayor que 10")
@@ -31,3 +33,4 @@ if (z > 10) {
 } else {
     console.log("es igual a 10")
 }
+
