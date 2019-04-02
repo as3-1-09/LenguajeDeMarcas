@@ -5,8 +5,8 @@ app.get('/', function (req, res) {
   res.sendfile('index.html');
 });
 
-app.get('/', function (req, res) {
-    res.sendfile('prueba.html');
+app.get('/web', function (req, res) {
+    res.sendFile(__dirname + 'prueba.html');
   });
 
 app.listen(3000, function () {
