@@ -11,6 +11,11 @@ tiempo = [
 ]
 
 app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/tiempo.html')
+  ;
+});
+
+app.get('/datuak', function (req, res) {
 
   var r = [];
   console.log("Días lluviosos:")
@@ -29,3 +34,4 @@ app.get('/', function (req, res) {
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
+
